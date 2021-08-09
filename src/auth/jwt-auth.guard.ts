@@ -9,7 +9,7 @@ export class JwtAuthGuard extends AuthGuard('jwt') {
       throw new UnauthorizedException({
         statusCode: HttpStatus.UNAUTHORIZED,
         message: 'Access token expired.',
-        code: '1123',
+        code: 1141576252,
       });
     }
     // You can throw an exception based on either "info" or "err" arguments
